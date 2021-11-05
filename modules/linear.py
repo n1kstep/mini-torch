@@ -1,4 +1,5 @@
-from nn.module import Module
+import numpy as np
+from module import Module
 
 
 class Linear(Module):

@@ -1,4 +1,5 @@
-from nn.module import Module
+from module import Module
+
 
 class Sequential(Module):
     def __init__ (self, *layers):

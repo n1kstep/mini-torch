@@ -1,17 +1,17 @@
-from abc import ABC, abstractclassmethod
+from abc import ABCMeta, abstractmethod
 import numpy as np
 
 
-class Module(ABC):
+class Module(ABCmetaclass=ABCMeta):
     def __init__(self):
         self._train = True
     
-    @abstractclassmethod
+    @abstractmethod
     def forward(self, input):
         raise NotImplementedError
 
-    @abstractclassmethod
-    def backward(self,input, grad_output):
+    @abstractmethod
+    def backward(self, input, grad_output):
         raise NotImplementedError
     
     def parameters(self):
